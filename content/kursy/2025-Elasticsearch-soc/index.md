@@ -2,19 +2,18 @@
 
 # agenda:
  - **Wstęp**
- -- 
- - **instalacja**
- -- elasticsearch
- -- kibana
- -- fleet
+  - **instalacja**
+    - elasticsearch
+    - kibana
+    - fleet
  - **konfiguracja**
- -- fleet
- -- kibana
- -- elasticsearch
- -- źródła danych
+    - fleet
+    - kibana
+    - elasticsearch
+    - źródła danych
  - **SOC**
- -- reguły
- -- incydenty
- -- wyszukiwanie
- -- analiza
- -- 
+    - reguły
+    - incydenty
+    - wyszukiwanie
+    - analiza
+    - 
