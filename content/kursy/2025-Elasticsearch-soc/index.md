@@ -1,3 +1,12 @@
+---
+title: Kurs Elasticsearch - SOC - 2025
+tags:
+  - elk
+  - soc
+aliases:
+  - Alias
+---
+
 # TODO
 
 # agenda:
@@ -17,3 +26,7 @@
     - wyszukiwanie
     - analiza
     - 
+
+
+#test
+# test
