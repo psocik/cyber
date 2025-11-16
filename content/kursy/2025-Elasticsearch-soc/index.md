@@ -9,7 +9,7 @@ aliases:
 ![[2025-elasticsearch-soc-img1.png]]
 # TODO
 
-# agenda:
+️# agenda:
  - **Wstęp**
   - **instalacja**
     - elasticsearch
@@ -24,7 +24,7 @@ aliases:
     - reguły
     - incydenty
     - wyszukiwanie
-    - analiza
+    - analiza️
     - 
 
 
