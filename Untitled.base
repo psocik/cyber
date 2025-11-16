@@ -1,11 +1,12 @@
 formulas:
   Untitled: ""
+  Untitled 2: ""
 views:
   - type: table
     name: Table
     filters:
       and:
-        - file.inFolder("content")
+        - file.inFolder("content/kursy/2025-Elasticsearch-soc")
     order:
-      - file.name
-      - formula.Untitled
+      - title
+      - formula.Untitled 2
