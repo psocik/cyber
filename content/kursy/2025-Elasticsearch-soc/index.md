@@ -3,9 +3,6 @@ title: Kurs Elasticsearch - SOC - 2025
 tags:
   - elk
   - soc
-aliases:
-  - Alias
-model: ollama@gemma3:12b
 ---
 ![[2025-elasticsearch-soc-img1.png]]
 # TODO
@@ -32,5 +29,3 @@ model: ollama@gemma3:12b
 #test
 
 
-
-![[Untitled.base]]
