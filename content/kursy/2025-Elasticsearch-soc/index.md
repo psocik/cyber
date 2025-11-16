@@ -31,5 +31,3 @@ model: ollama@gemma3:12b
 
 #test
 
-> [!NOTICE] Title
-> Contents
