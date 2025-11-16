@@ -10,3 +10,10 @@ views:
     order:
       - title
       - formula.Untitled 2
+  - type: cards
+    name: View
+    filters:
+      and:
+        - file.inFolder("content/kursy/2025-Elasticsearch-soc")
+    order:
+      - title
