@@ -21,7 +21,7 @@ aliases:
     - elasticsearch
     - źródła danych
 ️️ - **SOC**
-    - reguły
+️    - reguły
     - incydenty
     - wyszukiwanie
     - analiza️
