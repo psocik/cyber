@@ -6,7 +6,7 @@ tags:
 aliases:
   - Alias
 ---
-
+![[Pasted image 20251116165328.png]]
 # TODO
 
 # agenda:
