@@ -6,7 +6,7 @@ tags:
 aliases:
   - Alias
 ---
-![[Pasted image 20251116165328.png]]
+![[2025-elasticsearch-soc-img1.png]]
 # TODO
 
 # agenda:
