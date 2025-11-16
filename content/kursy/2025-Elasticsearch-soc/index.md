@@ -20,8 +20,8 @@ aliases:
     - kibana
     - elasticsearch
     - źródła danych
-️️ - **SOC**
-️    - reguły
+️️️ - **SOC**
+️️    - reguły
     - incydenty
     - wyszukiwanie
     - analiza️
