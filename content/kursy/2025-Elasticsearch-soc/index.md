@@ -5,6 +5,7 @@ tags:
   - soc
 aliases:
   - Alias
+model: ollama@gemma3:12b
 ---
 ![[2025-elasticsearch-soc-img1.png]]
 # TODO
