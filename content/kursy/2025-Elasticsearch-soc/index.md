@@ -20,7 +20,7 @@ aliases:
     - kibana
     - elasticsearch
     - źródła danych
- - **SOC**
+️ - **SOC**
     - reguły
     - incydenty
     - wyszukiwanie
