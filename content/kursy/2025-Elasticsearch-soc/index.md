@@ -31,3 +31,13 @@ model: ollama@gemma3:12b
 
 #test
 
+
+
+---
+```md
+dsa
+dsa
+$a = b + 2;
+
+
+```
