@@ -1,0 +1,11 @@
+formulas:
+  Untitled: ""
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("content")
+    order:
+      - file.name
+      - formula.Untitled

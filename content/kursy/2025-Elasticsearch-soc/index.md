@@ -33,11 +33,4 @@ model: ollama@gemma3:12b
 
 
 
----
-```md
-dsa
-dsa
-$a = b + 2;
-
-
-```
+![[Untitled.base]]
