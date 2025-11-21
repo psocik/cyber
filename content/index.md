@@ -1,4 +1,1 @@
 # co nowego
-![[content/daily]] 
-
-
