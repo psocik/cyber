@@ -1,2 +1,2 @@
 # co nowego
-![[Untitled.base]]
+![[Untitled.base]
