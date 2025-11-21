@@ -1,2 +1,2 @@
 # co nowego
-![[content/x]]
+![[content/daily/]]
