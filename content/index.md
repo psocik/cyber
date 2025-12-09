@@ -1,3 +1,7 @@
 # co nowego
 
-#feature/filter 
+[[content/daily/]]
+[[content/posts/index.md]]
+[[content/daily/]]
+
+#feature/emitter 
