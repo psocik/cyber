@@ -1,8 +1,18 @@
 ---
 cssclasses:
-  - list-cards
+  - cards
+  - cards-cover
+  - cards-2-3
+  - table-max
+  - cards-cols-5
 ---
-
+```markdown
+  - cards
+  - cards-cover
+  - cards-2-3
+  - table-max
+  - cards-cols-5
+```
 ## test
 
 - <span class="icon-app icon-notion"></span> [[notion|Notion]]
