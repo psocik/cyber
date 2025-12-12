@@ -1,10 +1,6 @@
 ---
 cssclasses:
-  - cards
-  - cards-cover
-  - cards-2-3
-  - table-max
-  - cards-cols-5
+  - list_card_style
 ---
 ```markdown
   - cards
