@@ -1,8 +1,12 @@
+---
+cssclasses:
+  - list-cards
+---
 
 
 ## test
 
-- <span class="icon-app icon-notion"></span> [[Import from Notion|Notion]]
+- <span class="icon-app icon-notion"></span> [[notion|Notion]]
 - <span class="icon-app icon-onenote"></span> [[Import from Microsoft OneNote|Microsoft OneNote]]
 - <span class="icon-app icon-evernote"></span> [[Import from Evernote|Evernote]]
 - <span class="icon-app icon-apple-notes"></span> [[Import from Apple Notes|Apple Notes]]
