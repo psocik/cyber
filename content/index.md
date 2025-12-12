@@ -3,7 +3,6 @@ cssclasses:
   - list-cards
 ---
 
-
 ## test
 
 - <span class="icon-app icon-notion"></span> [[notion|Notion]]
