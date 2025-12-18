@@ -1,5 +1,5 @@
 ---
-title: Kurs Elasticsearch - SOC - 2025
+title: Kurs Elasticsearch - SOC - 2026
 tags:
   - elk
   - soc
