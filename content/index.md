@@ -1,0 +1,2 @@
+# [[/content/daily/index.md]]
+
