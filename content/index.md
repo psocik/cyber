@@ -1,3 +1,7 @@
+---
+title: ICT
+---
+
 # HOME
 
 # 1. [[/daily/|Daily]]
