@@ -1,4 +1,5 @@
 # docker compose multi-node
+
 ```yml
 services:
   es-master:
