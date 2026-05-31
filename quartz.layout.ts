@@ -65,6 +65,7 @@ export const defaultContentPageLayout: PageLayout = {
         title: "",
         limit: 10,         // Ile postów chcesz pokazać
         showTags: true,    // Czy pokazywać tagi przy postach
+        filter: (file) => file.slug !== "index",         // Dodajemy ten filtr, aby ignorować plik o slugu "index"
       }),
       condition: (page) => page.fileData.slug === "index", // Ma się pokazać TYLKO na głównej
     }),
