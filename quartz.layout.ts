@@ -62,7 +62,7 @@ export const defaultContentPageLayout: PageLayout = {
   afterBody: [
     Component.ConditionalRender({
       component: Component.RecentNotes({
-        title: "Najnowsze wpisy",
+        title: "",
         limit: 10,         // Ile postów chcesz pokazać
         showTags: true,    // Czy pokazywać tagi przy postach
       }),
