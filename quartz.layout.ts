@@ -21,8 +21,16 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.Breadcrumbs(),
       condition: (page) => page.fileData.slug !== "index",
     }),
-    Component.ArticleTitle(),
-    Component.ContentMeta(),
+    // Ukrywamy tytuł artykułu na stronie głównej (bo "index" ma swój własny tekst/nagłówek)
+    Component.ConditionalRender({
+      component: Component.ArticleTitle(),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
+    // Ukrywamy datę i czas czytania na stronie głównej
+    Component.ConditionalRender({
+      component: Component.ContentMeta(),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
     Component.TagList(),
   ],
   left: [
@@ -41,9 +49,25 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
+    // Graf możesz zostawić lub ukryć – według uznania
+    Component.Graph(), 
+    // Ukrywamy spis treści na stronie głównej, bo i tak generuje się z nagłówków ostatnich postów
+    Component.ConditionalRender({
+      component: Component.DesktopOnly(Component.TableOfContents()),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
     Component.Backlinks(),
+  ],
+  // TUTAJ dodajemy sekcję afterBody, która odpala się POD główną treścią pliku index.md
+  afterBody: [
+    Component.ConditionalRender({
+      component: Component.RecentNotes({
+        title: "Najnowsze wpisy",
+        limit: 10,         // Ile postów chcesz pokazać
+        showTags: true,    // Czy pokazywać tagi przy postach
+      }),
+      condition: (page) => page.fileData.slug === "index", // Ma się pokazać TYLKO na głównej
+    }),
   ],
 }
 
