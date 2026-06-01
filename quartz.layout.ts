@@ -66,7 +66,7 @@ export const defaultContentPageLayout: PageLayout = {
         title: "Daily info",
         limit: 10,         // Ile postów chcesz pokazać
         showTags: true,    // Czy pokazywać tagi przy postach
-        filter: (file) => file.slug!.startsWith("posty/daily/") && file.slug !== "index" // Ma się pokazać TYLKO na głównej
+        filter: (file) => file.slug!.startsWith("daily/") && file.slug !== "index" // Ma się pokazać TYLKO na głównej
       }),
       condition: (page) => page.fileData.slug === "index", // Ma się pokazać TYLKO na głównej
     }),
