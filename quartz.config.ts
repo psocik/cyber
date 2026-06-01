@@ -1,22 +1,17 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-/**
- * Quartz 4 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
- */
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "ict.cybernetyka.org",
     pageTitleSuffix: "",
-    enableSPA: true,
+    enableSPA: true, 
     enablePopovers: true,
     analytics: {
       provider: 'google', 
       tagId: 'G-MYD6XFX7JZ'
     },
-    locale: "en-US",
+    locale: "pl-PL", 
     baseUrl: "ict.cybernetyka.org",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
@@ -65,13 +60,18 @@ const config: QuartzConfig = {
           light: "github-light",
           dark: "github-dark",
         },
-        keepBackground: false,
+        keepBackground: true, // ZMIENIONE: kod lepiej wtapia się w tło Twojego motywu
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
-      Plugin.Description(),
+      
+      // ZMIENIONE: Inteligentne opisy pod SEO (najpierw bierze z frontmattera, potem z tekstu)
+      Plugin.Description({
+        descriptionLength: 150,
+      }),
+      
       Plugin.Latex({ renderEngine: "katex" }),
     ],
     filters: [Plugin.RemoveDrafts()],
@@ -89,8 +89,8 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
+      
+      // USUNIĘTE: Plugin.CustomOgImages() – Twój build będzie teraz błyskawiczny!
     ],
   },
 }
