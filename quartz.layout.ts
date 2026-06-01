@@ -4,7 +4,9 @@ import * as Component from "./quartz/components"
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
+  header: [
+    Component.PageTitle(),
+  ],
   afterBody: [],
   footer: Component.Footer({
     links: {
@@ -34,7 +36,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: [
-    Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
@@ -65,9 +66,9 @@ export const defaultContentPageLayout: PageLayout = {
         title: "Daily info",
         limit: 10,         // Ile postów chcesz pokazać
         showTags: true,    // Czy pokazywać tagi przy postach
-        filter: (file) => file.slug !== "index",         // Dodajemy ten filtr, aby ignorować plik o slugu "index"
+        filter: (file) => file.slug!.startsWith("posty/daily") && file.slug !== "index" // Ma się pokazać TYLKO na głównej
       }),
-      filter: (file) => file.slug!.startsWith("posty/daily") && file.slug !== "index" // Ma się pokazać TYLKO na głównej
+      condition: (page) => page.fileData.slug === "index", // Ma się pokazać TYLKO na głównej
     }),
   ],
 }
