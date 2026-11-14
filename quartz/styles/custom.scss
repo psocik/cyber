@@ -1,3 +1,20 @@
-@use "./variables.scss" as *;
-
+@use "./base.scss";
 // put your custom CSS here!
+
+
+.markdown-preview-view.list_card_style ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.markdown-preview-view.list_card_style ul li {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.391);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.markdown-preview-view.list_card_style .list-bullet {
+    display: none;
+}
