@@ -1,0 +1,31 @@
+---
+title: Kurs Elasticsearch - SOC - 2026
+tags:
+  - elk
+  - soc
+---
+![[2025-elasticsearch-soc-img1.png]]
+# TODO
+
+️# agenda:
+ - **Wstęp**
+  - **instalacja**
+    - elasticsearch
+    - kibana
+    - fleet
+ - **konfiguracja**
+    - fleet
+    - kibana
+    - elasticsearch
+    - źródła danych
+️️️️️ - **SOC**
+️️    - reguły
+    - incydenty
+    - wyszukiwanie
+    - analiza️
+    - 
+
+
+#test
+
+
