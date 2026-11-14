@@ -1,16 +1,25 @@
 import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
-import * as ExternalPlugin from "./quartz/plugins"
-
-// 1. Nadpisanie opcji wtyczki (funkcja filter wymaga zapisu w TS, bo YAML jej nie przyjmie)
-ExternalPlugin.RecentNotes({
-  title: "Daily info",
-  limit: 10,
-  showTags: true,
-  filter: (file) => file.slug!.startsWith("posty/daily/") && file.slug !== "index",
-})
+import * as Component from "./quartz/components"
 
 const config = await loadQuartzConfig()
 export default config
 
-// 2. Ładowanie layoutu (pozycja wtyczki i warunki są sterowane w quartz.config.yaml lub tutaj)
-export const layout = await loadQuartzLayout()
+const layout = await loadQuartzLayout()
+
+// Wstrzykujemy komponent RecentNotes z funkcją filtrującą bezpośrednio w TS,
+// ponieważ pliki YAML nie obsługują wyrażeń lambda / funkcji.
+if (layout.page?.afterBody) {
+  layout.page.afterBody.push(
+    Component.ConditionalRender({
+      component: Component.RecentNotes({
+        title: "Daily info",
+        limit: 10,
+        showTags: true,
+        filter: (file) => file.slug!.startsWith("posty/daily/") && file.slug !== "index",
+      }),
+      condition: (page) => page.fileData.slug === "index",
+    })
+  )
+}
+
+export { layout }
